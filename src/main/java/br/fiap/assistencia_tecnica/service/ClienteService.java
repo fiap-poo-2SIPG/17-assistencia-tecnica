@@ -28,4 +28,8 @@ public class ClienteService {
         return repository.findAll();
     }
 
+    public Cliente buscarPorId(Long id) {
+        return repository.findById(id).orElse(null);
+    }
+
 }
